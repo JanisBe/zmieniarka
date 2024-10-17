@@ -31,16 +31,16 @@ jobs:
         run: ./mvnw package
         shell: bash
 
-      - name: List contents of the target directory
-        run: |
-          dir target\  # For Windows runners
-        shell: pwsh
-
       - name: Package to EXE using jpackage
         run: |
           jpackage --input target/ --main-jar zmieniarka-1.0-SNAPSHOT.jar --main-class com.janisbe.ZmieniarkaZnakow \
           --name Zmieniarka --type exe --runtime-image $HOME/javafx-sdk --icon replace.ico
         shell: bash
+
+      - name: List contents of the target directory
+        run: |
+          dir target\  # For Windows runners
+        shell: pwsh
 
       - name: Upload the packaged EXE as an artifact
         uses: actions/upload-artifact@v3
