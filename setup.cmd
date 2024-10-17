@@ -1,0 +1,1 @@
+jpackage --input . --main-jar zmieniarka.jar --main-class Zmieniarka --name ReplaceApp --type exe --icon replace.ico --vendor Janis --runtime-image ./bins
