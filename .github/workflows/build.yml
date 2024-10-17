@@ -28,8 +28,7 @@ jobs:
           unzip javafx-sdk.zip -d $HOME/javafx-sdk
 
       - name: Build the project using Gradle (or Maven)
-        run: |
-          ./gradlew build  # or ./mvnw package for Maven
+        run: ./mvnw package
         shell: bash
 
       - name: Package to EXE using jpackage
