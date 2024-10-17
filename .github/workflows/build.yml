@@ -39,7 +39,7 @@ jobs:
 
       - name: List contents of the target directory
         run: |
-          dir target\  # For Windows runners
+          dir .\  # For Windows runners
         shell: pwsh
 
       - name: Upload the packaged EXE as an artifact
