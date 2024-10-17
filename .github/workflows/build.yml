@@ -45,5 +45,5 @@ jobs:
       - name: Upload the packaged EXE as an artifact
         uses: actions/upload-artifact@v3
         with:
-          name: zmieniarka.exe
-          path: ./zmieniarka.exe
+          name: Zmieniarka-1.0.exe
+          path: ./Zmieniarka-1.0.exe
