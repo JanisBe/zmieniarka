@@ -24,7 +24,7 @@ jobs:
       - name: Install JavaFX SDK 21
         run: |
           # JavaFX isn't bundled with JDK, so we download it
-          curl -Lo javafx-sdk.zip https://download2.gluonhq.com/openjfx/21.0.0.0/openjfx-21.0.0.0_windows-x64_bin-sdk.zip
+          curl -Lo javafx-sdk.zip https://download2.gluonhq.com/openjfx/21.0.5/openjfx-21.0.5_windows-x64_bin-sdk.zip
           unzip javafx-sdk.zip -d $HOME/javafx-sdk
 
       - name: Build the project using Gradle (or Maven)
