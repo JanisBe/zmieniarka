@@ -33,8 +33,8 @@ jobs:
 
       - name: Package to EXE using jpackage
         run: |
-          jpackage --input build/libs/ --main-jar yourapp.jar --main-class com.janisbe.ZmieniarkaZnakow \
-          --name MyApp --type exe --runtime-image $HOME/javafx-sdk --icon replace.ico
+          jpackage --input build/libs/ --main-jar zmieniarka.jar --main-class com.janisbe.ZmieniarkaZnakow \
+          --name Zmieniarka --type exe --runtime-image $HOME/javafx-sdk --icon replace.ico
         shell: bash
 
       - name: Upload the packaged EXE as an artifact
