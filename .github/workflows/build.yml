@@ -13,10 +13,10 @@ jobs:
     runs-on: windows-latest  # Since we're targeting a Windows .exe file
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.2.1
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4.4.0
         with:
           distribution: 'temurin'   # Use Temurin JDK
           java-version: '21'        # Specify Java version 21
@@ -43,7 +43,7 @@ jobs:
         shell: pwsh
 
       - name: Upload the packaged EXE as an artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Zmieniarka-1.0.exe
           path: ./Zmieniarka-1.0.exe
